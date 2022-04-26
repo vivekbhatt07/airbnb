@@ -5,3 +5,15 @@
 
 body {
   font-family: "poppins", sans-serif; }
+
+.nav {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 0 10px -2px #000;
+  margin-bottom: 25px; }
+
+.nav__logo {
+  width: 100px; }
