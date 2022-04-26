@@ -8,18 +8,50 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+@mixin flex-Center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 // NAVBAR:
 
 .nav {
   width: 100vw;
   height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-Center();
   box-shadow: 2px 0 10px -2px #000;
-  margin-bottom: 25px;
+  margin-bottom: $bottom-margin;
 }
 
 .nav__logo {
   width: 100px;
+}
+
+// HERO:
+
+.hero {
+  margin-bottom: $bottom-margin;
+  @include flex-Center();
+  flex-direction: column;
+  &__img {
+    margin-bottom: 35px;
+    width: 50%;
+  }
+
+  &__content {
+    margin-bottom: 50px;
+  }
+
+  &__head {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: -1px;
+  }
+
+  &__text {
+    font-size: 22px;
+    letter-spacing: 1.2px;
+  }
 }

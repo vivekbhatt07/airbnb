@@ -17,3 +17,23 @@ body {
 
 .nav__logo {
   width: 100px; }
+
+.hero {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .hero__img {
+    margin-bottom: 35px;
+    width: 50%; }
+  .hero__content {
+    margin-bottom: 50px; }
+  .hero__head {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: -1px; }
+  .hero__text {
+    font-size: 22px;
+    letter-spacing: 1.2px; }
