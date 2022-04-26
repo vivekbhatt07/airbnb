@@ -21,7 +21,7 @@ body {
   height: 4rem;
   @include flex-Center();
   box-shadow: 2px 0 10px -2px #000;
-  margin-bottom: $bottom-margin;
+  margin-bottom: 25px;
 }
 
 .nav__logo {
@@ -31,7 +31,7 @@ body {
 // HERO:
 
 .hero {
-  margin-bottom: $bottom-margin;
+  margin-bottom: 50px;
   @include flex-Center();
   flex-direction: column;
   &__img {
@@ -54,4 +54,46 @@ body {
     font-size: 22px;
     letter-spacing: 1.2px;
   }
+}
+
+// CARD:
+.card {
+  width: 232px;
+  margin: 0 30px;
+  position: relative;
+  &::before {
+    content: "SOLD OUT";
+    background-color: #fff;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 0.3rem;
+  }
+
+  &__img {
+    width: 232px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  // &__stats {
+  // }
+  // &__star {
+  // }
+  &__rating {
+    margin-left: 5px;
+    font-weight: 600;
+  }
+  &__reviewCount {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  // &__location {
+  // }
+  // &__text {
+  // }
+  // &__price {
+  // }
 }

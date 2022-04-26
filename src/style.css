@@ -19,7 +19,7 @@ body {
   width: 100px; }
 
 .hero {
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,3 +37,28 @@ body {
   .hero__text {
     font-size: 22px;
     letter-spacing: 1.2px; }
+
+.card {
+  width: 232px;
+  margin: 0 30px;
+  position: relative; }
+  .card::before {
+    content: "SOLD OUT";
+    background-color: #fff;
+    font-weight: 600;
+    padding: 0.15rem 0.5rem;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 0.3rem; }
+  .card__img {
+    width: 232px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 0.5rem; }
+  .card__rating {
+    margin-left: 5px;
+    font-weight: 600; }
+  .card__reviewCount {
+    margin-left: 5px;
+    margin-right: 5px; }

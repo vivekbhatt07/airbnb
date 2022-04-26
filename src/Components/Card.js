@@ -10,11 +10,11 @@ export default function Card() {
       <div className="card__content">
         <div className="card__stats">
           <img className="card__star" src={Star} alt="star" />
-          <span className="card__rating"></span>
-          <span className="card__reviewCount"></span>
-          <span className="card__location"></span>
+          <span className="card__rating">5.0</span>
+          <span className="card__reviewCount">(6).</span>
+          <span className="card__location">USA</span>
         </div>
-        <div className="card__text"></div>
+        <div className="card__text">Life lessons with Katie Xaleres</div>
         <div className="card__price">
           <strong>From $136</strong> / person
         </div>
