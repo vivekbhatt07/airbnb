@@ -57,10 +57,17 @@ body {
 }
 
 // CARD:
+.card_container {
+  display: flex;
+  justify-content: center;
+}
+
 .card {
+  display: inline-block;
   width: 232px;
   margin: 0 30px;
   position: relative;
+  margin-bottom: 20px;
   &::before {
     content: "SOLD OUT";
     background-color: #fff;
@@ -92,8 +99,10 @@ body {
   }
   // &__location {
   // }
-  // &__text {
-  // }
+  &__text {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
   // &__price {
   // }
 }

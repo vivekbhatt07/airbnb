@@ -38,10 +38,16 @@ body {
     font-size: 22px;
     letter-spacing: 1.2px; }
 
+.card_container {
+  display: flex;
+  justify-content: center; }
+
 .card {
+  display: inline-block;
   width: 232px;
   margin: 0 30px;
-  position: relative; }
+  position: relative;
+  margin-bottom: 20px; }
   .card::before {
     content: "SOLD OUT";
     background-color: #fff;
@@ -62,3 +68,6 @@ body {
   .card__reviewCount {
     margin-left: 5px;
     margin-right: 5px; }
+  .card__text {
+    font-size: 15px;
+    margin-bottom: 5px; }
