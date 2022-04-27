@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
   font-family: "poppins", sans-serif;
 }
@@ -85,10 +89,7 @@ body {
     object-fit: cover;
     border-radius: 0.5rem;
   }
-  // &__stats {
-  // }
-  // &__star {
-  // }
+
   &__rating {
     margin-left: 5px;
     font-weight: 600;
@@ -97,12 +98,9 @@ body {
     margin-left: 5px;
     margin-right: 5px;
   }
-  // &__location {
-  // }
+
   &__text {
     font-size: 15px;
     margin-bottom: 5px;
   }
-  // &__price {
-  // }
 }
